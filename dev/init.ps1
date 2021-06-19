@@ -2,11 +2,11 @@
 # Additional steps to initialize the development container
 
 # Copy container specific setting overrides in
-if (-not (Test-Path "$HOME/.vscode-server/data/Machine"))
-{
-    New-Item "$HOME/.vscode-server/data/Machine" -ItemType Directory | Out-Null
-}
-Copy-Item -LiteralPath "/app/dev/vscode_settings.json" -Destination "$HOME/.vscode-server/data/Machine/settings.json"
+#if (-not (Test-Path "$HOME/.vscode-server/data/Machine"))
+#{
+#    New-Item "$HOME/.vscode-server/data/Machine" -ItemType Directory | Out-Null
+#}
+#Copy-Item -LiteralPath "/app/dev/vscode_settings.json" -Destination "$HOME/.vscode-server/data/Machine/settings.json"
 
 # Install sqlserver module so we can use 'Invoke-Sqlcmd'
 Install-Module sqlserver -Confirm:$False  -Force
