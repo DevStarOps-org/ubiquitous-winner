@@ -11,6 +11,8 @@ Copy-Item -LiteralPath "/app/dev/vscode_settings.json" -Destination "$HOME/.vsco
 # Install sqlserver module so we can use 'Invoke-Sqlcmd'
 Install-Module sqlserver -Confirm:$False  -Force
 
+# Invoke-Sqlcmd -ServerInstance "db_instance,1433" -Username SA -Password 8y2xQG^tG!wsgPN5B2C!gCEzPn^1w -Query "SELECT * FROM sys.databases";
+
 # Create new database
 # Source for the retry logic:
 # https://stackoverflow.com/a/47712807/411428
