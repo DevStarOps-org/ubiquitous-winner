@@ -1,17 +1,7 @@
 #requires -PSEdition Core
 # Additional steps to initialize the development container
 
-# Copy container specific setting overrides in
-#if (-not (Test-Path "$HOME/.vscode-server/data/Machine"))
-#{
-#    New-Item "$HOME/.vscode-server/data/Machine" -ItemType Directory | Out-Null
-#}
-#Copy-Item -LiteralPath "/app/dev/vscode_settings.json" -Destination "$HOME/.vscode-server/data/Machine/settings.json"
-
-# Install sqlserver module so we can use 'Invoke-Sqlcmd'
 Install-Module sqlserver -Confirm:$False  -Force
-
-# Invoke-Sqlcmd -ServerInstance "db_instance,1433" -Username SA -Password 8y2xQG^tG!wsgPN5B2C!gCEzPn^1w -Query "SELECT * FROM sys.databases";
 
 # Create new database
 # Source for the retry logic:
