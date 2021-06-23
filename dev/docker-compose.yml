@@ -7,8 +7,8 @@ services:
         working_dir: /app
         volumes:
             - "..:/app"
-        depends_on:
-            - db_instance
+#        depends_on:
+#            - db_instance
         command: >
             bash -c "pwsh /app/dev/init.ps1 && sleep infinity"
     
