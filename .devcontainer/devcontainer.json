@@ -10,13 +10,12 @@
     "ms-vscode.powershell",
     "ms-vscode.notepadplusplus-keybindings",
     "vscode-icons-team.vscode-icons",
-    "streetsidesoftware.code-spell-checker",
     "kishoreithadi.dotnet-core-essentials",
     "editorconfig.editorconfig",
-    "eamodio.gitlens",
+    "eamodio.gitlens"
+    ,
     "ms-mssql.mssql"
   ],
-  "terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh",
   "settings": {
     "workbench.colorTheme": "Visual Studio 2019 Light",
     "mssql.maxRecentConnections": 5,
