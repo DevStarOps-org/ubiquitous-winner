@@ -3,6 +3,7 @@
   "dockerComposeFile": [
       "../dev/docker-compose.yml"
   ],
+
   "service": "dev",
   "workspaceFolder": "/app",
   "extensions": [
@@ -16,6 +17,7 @@
     ,
     "ms-mssql.mssql"
   ],
+  
   "settings": {
     "workbench.colorTheme": "Visual Studio 2019 Light",
     "mssql.maxRecentConnections": 5,
